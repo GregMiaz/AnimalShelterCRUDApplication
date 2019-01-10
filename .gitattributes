@@ -5,6 +5,7 @@
 *.gs linguist-language=csharp
 *.js linguist-vendored
 *.css linguist-vendored
+scripts/* linguist-vendored
 *.html linguist-vendored
 ###############################################################################
 # Set default behavior for command prompt diff.
