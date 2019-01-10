@@ -13,7 +13,7 @@
             <p>Animal Shelter</p>
             <p>List of animals:</p>
             <br />
-            <asp:GridView ID="gridViewAnimals" DataKeyNames="Id" runat="server" AllowSorting="True" AllowPaging="True" AutoGenerateColumns="False" CssClass="table table-striped table-bordered table-condensed" OnSelectedIndexChanged="gridViewAnimals_SelectedIndexChanged" OnRowDeleting="gridViewAnimals_RowDeleting">
+            <asp:GridView ID="gridViewAnimals" DataKeyNames="Id" runat="server" AllowSorting="True" AutoGenerateColumns="False" CssClass="table table-striped table-bordered table-condensed" OnSelectedIndexChanged="gridViewAnimals_SelectedIndexChanged" OnRowDeleting="gridViewAnimals_RowDeleting">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:BoundField DataField="Name" HeaderText="Name" />

@@ -1,0 +1,21 @@
+Id;Name;Species;Weight;Date_Of_Birth
+1;Chase;Dog;8;2014-10-01
+2;Bugs Bunny;Rabbit;11;1960-07-14
+3;Tom;Cat;7;1979-02-12
+4;Jerry;Mouse;1;1979-01-13
+5;Oggy;Cat;9;2012-03-07
+6;Daffy;Duck;3;1937-12-07
+7;Mickey;Mouse;2;1928-04-07
+8;Skipper;Penguin;12;2005-11-08
+9;Roger;Rabbit;10;1981-06-18
+10;Donkey;Donkey;41;1993-03-09
+11;Puss in Boots;Cat;8;2007-11-01
+12;Dumbo;Elephant;200;1941-07-09
+13;Donald;Duck;12;1934-04-07
+14;Garfield;Cat;13;1978-09-17
+15;Road Runner;Ostrich Bird;78;1949-11-05
+16;Scooby-Doo;Dog;17;1969-09-19
+17;Wile E;Coyote;21;1949-01-03
+18;Winnie the Pooh;Bear;88;1966-05-03
+19;Yogi;Bear;121;1958-11-09
+20;Snoopy;Dog;12;1947-01-04
