@@ -4,6 +4,8 @@
 * text=auto
 *.gs linguist-language=c#
 *.js linguist-vendored
+css/* linguist-vendored
+*.html linguist-vendored
 ###############################################################################
 # Set default behavior for command prompt diff.
 #
