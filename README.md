@@ -8,8 +8,8 @@ Because I followed the separation of concerns pattern this app is combined from 
 1. Class library.
 2. Data migration console application with model, repository, controller and tooling classes.
 3. Windows Forms User Interface.
-ASP.NET Web Forms User Interface.
+4. ASP.NET Web Forms User Interface.
 
 To run the application please create Animals Database at (localdb)\MSSQLLocalDB instance.
-Creating animals table is part of application so you just have to click the Create Tablce button and seed this table with the animals.txt
+Creating animals table is part of application so you just have to click the Create Table button and seed this table with the animals.txt
 file attached to the project.
