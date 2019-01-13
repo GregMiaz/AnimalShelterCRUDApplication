@@ -21,7 +21,7 @@ namespace SOCAnimalShelterDataMigration.Repository
         {
             string sql = String.Format("insert into Animals (Name, Species," +
                 " Weight, Date_Of_Birth) values ('{0}', '{1}', {2}, '{3}')",
-                animal.Name, animal.Species, animal.Weight, animal.DateOfBirth.ToString("yyyyMMdd"));
+                animal.Name, animal.Species, animal.Weight, animal.DateOfBirth.Date.ToString("yyyyMMdd"));
 
             int result = _sqlManager.WriteData(sql);
             return result;

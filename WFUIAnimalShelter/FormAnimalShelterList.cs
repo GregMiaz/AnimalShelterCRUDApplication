@@ -1,12 +1,5 @@
 ﻿using SOCAnimalShelterDataMigration.Controllers;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WFUIAnimalShelter
@@ -20,14 +13,21 @@ namespace WFUIAnimalShelter
             var readController = new ReadController();
             dataGridViewAnimals.DataSource = readController.ReadAnimals();
             dataGridViewAnimals.Columns["Id"].Visible = false;
+            dataGridViewAnimals.Columns["Weight"].Visible = false;
+            dataGridViewAnimals.Columns["DateOfBirth"].Visible = false;
+            
+
         }
 
         private void buttonDetails_Click(object sender, EventArgs e)
         {
             if (dataGridViewAnimals.SelectedRows.Count > 0)
             {
-                string result = "Name: " + dataGridViewAnimals.SelectedRows[0].Cells[1].Value.ToString();
-                result += ", Species: " + dataGridViewAnimals.SelectedRows[0].Cells[2].Value.ToString();
+                const int dateTimeTruncateIndex = 10;
+                string result = string.Format("Name: {0}\n", dataGridViewAnimals.SelectedRows[0].Cells[1].Value.ToString());
+                result += string.Format("Species: {0}\n", dataGridViewAnimals.SelectedRows[0].Cells[2].Value.ToString());
+                result += string.Format("Date of Birth: {0}\n", dataGridViewAnimals.SelectedRows[0].Cells[3].Value.ToString().Remove(dateTimeTruncateIndex));
+                result += string.Format("Weight: {0} kg",dataGridViewAnimals.SelectedRows[0].Cells[4].Value.ToString());
                 MessageBox.Show(result);
             }
             else

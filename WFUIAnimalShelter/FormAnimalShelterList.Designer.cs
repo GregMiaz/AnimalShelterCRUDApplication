@@ -38,7 +38,7 @@
             // 
             // buttonDetails
             // 
-            this.buttonDetails.Location = new System.Drawing.Point(12, 47);
+            this.buttonDetails.Location = new System.Drawing.Point(114, 60);
             this.buttonDetails.Name = "buttonDetails";
             this.buttonDetails.Size = new System.Drawing.Size(122, 23);
             this.buttonDetails.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(12, 105);
+            this.buttonDelete.Location = new System.Drawing.Point(114, 118);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(122, 23);
             this.buttonDelete.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(12, 76);
+            this.buttonAdd.Location = new System.Drawing.Point(114, 89);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(122, 23);
             this.buttonAdd.TabIndex = 2;
@@ -68,11 +68,13 @@
             // 
             // dataGridViewAnimals
             // 
+            this.dataGridViewAnimals.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridViewAnimals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAnimals.Location = new System.Drawing.Point(12, 134);
+            this.dataGridViewAnimals.Location = new System.Drawing.Point(242, 60);
             this.dataGridViewAnimals.Name = "dataGridViewAnimals";
+            this.dataGridViewAnimals.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dataGridViewAnimals.RowTemplate.Height = 24;
-            this.dataGridViewAnimals.Size = new System.Drawing.Size(757, 292);
+            this.dataGridViewAnimals.Size = new System.Drawing.Size(368, 362);
             this.dataGridViewAnimals.TabIndex = 3;
             // 
             // labelTitle
@@ -89,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(882, 450);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.dataGridViewAnimals);
             this.Controls.Add(this.buttonAdd);

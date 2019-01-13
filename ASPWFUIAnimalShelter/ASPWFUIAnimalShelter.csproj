@@ -216,6 +216,10 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AnimalShelterLibrary\AnimalShelterLibrary.csproj">
+      <Project>{2eb3e9a6-a395-44f3-ae1f-4abaa20029c3}</Project>
+      <Name>AnimalShelterLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SOCAnimalShelterDataMigration\SOCAnimalShelterDataMigration.csproj">
       <Project>{7F144535-C0F2-4B3C-A6C8-624FE8C73F7E}</Project>
       <Name>SOCAnimalShelterDataMigration</Name>

@@ -36,6 +36,7 @@ namespace WFUIAnimalShelter
             var readController = new ReadController();
             _dataGridViewAnimals.DataSource = readController.ReadAnimals();
 
+            MessageBox.Show("You successfully added new animal to your list");
 
             this.Controls.Clear();
             this.InitializeComponent();
