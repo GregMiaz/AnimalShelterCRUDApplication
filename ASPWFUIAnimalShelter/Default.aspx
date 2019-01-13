@@ -8,11 +8,14 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-3">
     <form id="form1" runat="server">
         <div>
             <br />
             <br />
-            <asp:Label ID="labelTitle" runat="server" class="col-form-label" Text="Animal Shelter Data Migration"></asp:Label>
+            <asp:Label ID="labelTitle" runat="server" class="col-form-label" Text="<strong>Animal Shelter Data Migration<strong>"></asp:Label>
             <br />
             <br />
             <asp:Button ID="buttonCreateTable" runat="server" Text="Create Table" class="btn" OnClick="buttonCreateTable_Click" />
@@ -31,8 +34,11 @@
             <asp:Button ID="buttonShowAnimals" runat="server" Text="Show animals" class="btn" OnClick="buttonShowAnimals_Click" />
             <br />
             <br />
-            <asp:Label ID="labelMigrationResult" runat="server" class="col-form-label" ></asp:Label>
+            <asp:Label ID="labelMigrationResult" runat="server" class="col-form-label col-form-label" ></asp:Label>
         </div>
     </form>
+                </div>
+            </div>
+        </div>
 </body>
 </html>

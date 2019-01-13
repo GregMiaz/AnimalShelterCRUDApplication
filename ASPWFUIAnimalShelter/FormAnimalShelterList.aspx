@@ -12,6 +12,12 @@
         <div>
             <p>Animal Shelter</p>
             <p>List of animals:</p>
+            <asp:Label ID="labelDetails" runat="server"></asp:Label>
+            <br />
+            <asp:Label ID="labelDeleteResult" runat="server"></asp:Label>
+            <br />
+            <br />
+            <asp:Button ID="buttonAdd" runat="server" OnClick="buttonAdd_Click" Text="Add Animal" />
             <br />
             <asp:GridView ID="gridViewAnimals" DataKeyNames="Id" runat="server" AllowSorting="True" AutoGenerateColumns="False" CssClass="table table-striped table-bordered table-condensed" OnSelectedIndexChanged="gridViewAnimals_SelectedIndexChanged" OnRowDeleting="gridViewAnimals_RowDeleting">
                 <AlternatingRowStyle BackColor="White" />
@@ -33,14 +39,6 @@
                 <SortedDescendingCellStyle BackColor="#EAEAD3" />
                 <SortedDescendingHeaderStyle BackColor="#575357" />
             </asp:GridView>
-
-            <asp:Button ID="buttonAdd" runat="server" OnClick="buttonAdd_Click" Text="Add Animal" />
-            <br />
-            <br />
-            <asp:Label ID="labelDetails" runat="server"></asp:Label>
-            <br />
-            <br />
-            <asp:Label ID="labelDeleteResult" runat="server"></asp:Label>
         </div>
     </form>
 </body>

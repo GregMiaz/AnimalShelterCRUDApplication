@@ -18,6 +18,8 @@ namespace ASPWFUIAnimalShelter
                 var readController = new ReadController();
                 gridViewAnimals.DataSource = readController.ReadAnimals();
                 gridViewAnimals.DataBind();
+                gridViewAnimals.Columns[2].Visible = false;
+                gridViewAnimals.Columns[3].Visible = false;
             }
         }
 
@@ -33,6 +35,10 @@ namespace ASPWFUIAnimalShelter
             labelDetails.Text += gridViewRow.Cells[0].Text;
             labelDetails.Text += ", Species: ";
             labelDetails.Text += gridViewRow.Cells[1].Text;
+            labelDetails.Text += ", Weight: ";
+            labelDetails.Text += gridViewRow.Cells[2].Text;
+            labelDetails.Text += ", Date of Birth: ";
+            labelDetails.Text += gridViewRow.Cells[3].Text;
             labelDeleteResult.Text = "";
         }
 
