@@ -28,19 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonMigration = new System.Windows.Forms.Button();
             this.buttonShowAnimals = new System.Windows.Forms.Button();
             this.labelTitle = new System.Windows.Forms.Label();
             this.labelFileLocalization = new System.Windows.Forms.Label();
             this.textBoxPath = new System.Windows.Forms.TextBox();
             this.buttonCreateTable = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.buttonBrowseFile = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonMigration
             // 
-            this.buttonMigration.Location = new System.Drawing.Point(482, 160);
+            this.buttonMigration.Location = new System.Drawing.Point(482, 210);
             this.buttonMigration.Name = "buttonMigration";
-            this.buttonMigration.Size = new System.Drawing.Size(162, 54);
+            this.buttonMigration.Size = new System.Drawing.Size(230, 54);
             this.buttonMigration.TabIndex = 0;
             this.buttonMigration.Text = "Start data migration";
             this.buttonMigration.UseVisualStyleBackColor = true;
@@ -48,9 +52,9 @@
             // 
             // buttonShowAnimals
             // 
-            this.buttonShowAnimals.Location = new System.Drawing.Point(482, 242);
+            this.buttonShowAnimals.Location = new System.Drawing.Point(482, 286);
             this.buttonShowAnimals.Name = "buttonShowAnimals";
-            this.buttonShowAnimals.Size = new System.Drawing.Size(162, 64);
+            this.buttonShowAnimals.Size = new System.Drawing.Size(230, 64);
             this.buttonShowAnimals.TabIndex = 1;
             this.buttonShowAnimals.Text = "Show animals";
             this.buttonShowAnimals.UseVisualStyleBackColor = true;
@@ -79,14 +83,14 @@
             // 
             this.textBoxPath.Location = new System.Drawing.Point(482, 91);
             this.textBoxPath.Name = "textBoxPath";
-            this.textBoxPath.Size = new System.Drawing.Size(162, 22);
+            this.textBoxPath.Size = new System.Drawing.Size(230, 22);
             this.textBoxPath.TabIndex = 4;
-            this.textBoxPath.Text = "Specify file path here";
+            this.textBoxPath.Text = "Selected file path will appear here";
             this.textBoxPath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonCreateTable
             // 
-            this.buttonCreateTable.Location = new System.Drawing.Point(101, 91);
+            this.buttonCreateTable.Location = new System.Drawing.Point(173, 91);
             this.buttonCreateTable.Name = "buttonCreateTable";
             this.buttonCreateTable.Size = new System.Drawing.Size(122, 65);
             this.buttonCreateTable.TabIndex = 5;
@@ -94,11 +98,26 @@
             this.buttonCreateTable.UseVisualStyleBackColor = true;
             this.buttonCreateTable.Click += new System.EventHandler(this.buttonCreateTable_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // buttonBrowseFile
+            // 
+            this.buttonBrowseFile.Location = new System.Drawing.Point(482, 134);
+            this.buttonBrowseFile.Name = "buttonBrowseFile";
+            this.buttonBrowseFile.Size = new System.Drawing.Size(230, 54);
+            this.buttonBrowseFile.TabIndex = 6;
+            this.buttonBrowseFile.Text = "Browse File";
+            this.buttonBrowseFile.UseVisualStyleBackColor = true;
+            this.buttonBrowseFile.Click += new System.EventHandler(this.buttonBrowseFile_Click);
+            // 
             // FormAnimalShelterMigration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonBrowseFile);
             this.Controls.Add(this.buttonCreateTable);
             this.Controls.Add(this.textBoxPath);
             this.Controls.Add(this.labelFileLocalization);
@@ -107,6 +126,7 @@
             this.Controls.Add(this.buttonMigration);
             this.Name = "FormAnimalShelterMigration";
             this.Text = "Migration";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,5 +140,7 @@
         private System.Windows.Forms.Label labelFileLocalization;
         private System.Windows.Forms.TextBox textBoxPath;
         private System.Windows.Forms.Button buttonCreateTable;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button buttonBrowseFile;
     }
 }

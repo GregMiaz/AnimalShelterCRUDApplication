@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,5 +42,18 @@ namespace WFUIAnimalShelter
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             buttonCreateTable.Enabled = false;
         }
+
+        private void buttonBrowseFile_Click(object sender, EventArgs e)
+        {
+            var openFileDialog = new OpenFileDialog();
+
+            openFileDialog.Filter = "txt files (*.txt)|*.txt";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                textBoxPath.Text = Path.GetFullPath(openFileDialog.FileName);
+            }
+        }
+        
     }
 }
