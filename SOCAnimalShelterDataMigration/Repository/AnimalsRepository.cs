@@ -44,7 +44,7 @@ namespace SOCAnimalShelterDataMigration.Repository
         public int Edit(Animal animal)
         {
             string sql = String.Format($"update Animals set Name='{animal.Name}', Species='{animal.Species}'," +
-                $" Weight={animal.Weight}, Date_Of_Birth='{animal.DateOfBirth}' where Id={animal.Id}");
+                $" Weight={animal.Weight}, Date_Of_Birth='{animal.DateOfBirth.Date.ToString("yyyyMMdd")}' where Id={animal.Id}");
 
             int result = _sqlManager.WriteData(sql);
             return result;

@@ -1,4 +1,5 @@
 ﻿using SOCAnimalShelterDataMigration.Controllers;
+using SOCAnimalShelterDataMigration.Models;
 using System;
 using System.Windows.Forms;
 
@@ -67,6 +68,14 @@ namespace WFUIAnimalShelter
                 MessageBox.Show("You must select whole row.");
             }
 
+        }
+
+        private void dataGridViewAnimals_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            Animal animalToEdit = (Animal)dataGridViewAnimals.Rows[e.RowIndex].DataBoundItem;
+
+            var editController = new EditController();
+            editController.EditAnimal(animalToEdit);
         }
     }
 }

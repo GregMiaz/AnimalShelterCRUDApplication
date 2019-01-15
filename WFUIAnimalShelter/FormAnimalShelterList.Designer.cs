@@ -33,6 +33,7 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.dataGridViewAnimals = new System.Windows.Forms.DataGridView();
             this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnimals)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,7 +41,7 @@
             // 
             this.buttonDetails.Location = new System.Drawing.Point(114, 60);
             this.buttonDetails.Name = "buttonDetails";
-            this.buttonDetails.Size = new System.Drawing.Size(122, 23);
+            this.buttonDetails.Size = new System.Drawing.Size(122, 46);
             this.buttonDetails.TabIndex = 0;
             this.buttonDetails.Text = "Animal Details";
             this.buttonDetails.UseVisualStyleBackColor = true;
@@ -48,9 +49,9 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(114, 118);
+            this.buttonDelete.Location = new System.Drawing.Point(114, 166);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(122, 23);
+            this.buttonDelete.Size = new System.Drawing.Size(122, 46);
             this.buttonDelete.TabIndex = 1;
             this.buttonDelete.Text = "Delete Animal";
             this.buttonDelete.UseVisualStyleBackColor = true;
@@ -58,9 +59,9 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(114, 89);
+            this.buttonAdd.Location = new System.Drawing.Point(114, 114);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(122, 23);
+            this.buttonAdd.Size = new System.Drawing.Size(122, 46);
             this.buttonAdd.TabIndex = 2;
             this.buttonAdd.Text = "Add Animal";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -76,6 +77,7 @@
             this.dataGridViewAnimals.RowTemplate.Height = 24;
             this.dataGridViewAnimals.Size = new System.Drawing.Size(368, 362);
             this.dataGridViewAnimals.TabIndex = 3;
+            this.dataGridViewAnimals.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAnimals_CellEndEdit);
             // 
             // labelTitle
             // 
@@ -87,11 +89,19 @@
             this.labelTitle.TabIndex = 4;
             this.labelTitle.Text = "Animal Shelter List of animals";
             // 
+            // buttonEdit
+            // 
+            this.buttonEdit.Location = new System.Drawing.Point(0, 0);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(75, 23);
+            this.buttonEdit.TabIndex = 0;
+            // 
             // FormAnimalShelterList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(882, 450);
+            this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.dataGridViewAnimals);
             this.Controls.Add(this.buttonAdd);
@@ -112,5 +122,6 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.DataGridView dataGridViewAnimals;
         private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Button buttonEdit;
     }
 }
