@@ -11,34 +11,34 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-3">
-    <form id="form1" runat="server">
-        <div>
-            <br />
-            <br />
-            <asp:Label ID="labelTitle" runat="server" class="col-form-label" Text="<strong>Animal Shelter Data Migration<strong>"></asp:Label>
-            <br />
-            <br />
-            <asp:Button ID="buttonCreateTable" runat="server" Text="Create Table" class="btn" OnClick="buttonCreateTable_Click" />
-            <br />
-            <br />
-            <asp:Label ID="labelCreateTableMessage" runat="server"></asp:Label>
-            <br />
-            <br />
-            <asp:Label ID="labelFileLocalization" runat="server" Text="File localization:"></asp:Label>
-            &nbsp;<asp:TextBox ID="TextBoxPath" class="form-control-sm" runat="server">Specify file path here</asp:TextBox>
-            <br />
-            <br />
-            <asp:Button ID="buttonMigration" runat="server" Text="Start data migration" class="btn" OnClick="buttonMigration_Click" />
-            <br />
-            <br />
-            <asp:Button ID="buttonShowAnimals" runat="server" Text="Show animals" class="btn" OnClick="buttonShowAnimals_Click" />
-            <br />
-            <br />
-            <asp:Label ID="labelMigrationResult" runat="server" class="col-form-label col-form-label" ></asp:Label>
-        </div>
-    </form>
-                </div>
-            </div>
-        </div>
+                <form id="form1" runat="server">
+                    <div>
+                        <br />
+                        <br />
+                        <asp:Label ID="labelTitle" runat="server" class="col-form-label" Text="<strong>Animal Shelter Data Migration<strong>"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Button ID="buttonCreateTable" runat="server" Text="Create Table" class="btn" OnClick="buttonCreateTable_Click" />
+                        <br />
+                        <br />
+                        <asp:Label ID="labelCreateTableMessage" runat="server"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="labelFileLocalization" runat="server" Text="File localization:"></asp:Label>
+                        &nbsp;<asp:TextBox ID="TextBoxPath" class="form-control-sm" runat="server">Specify file path here</asp:TextBox>
+                        <br />
+                        <br />
+                        <asp:Button ID="buttonMigration" runat="server" Text="Start data migration" class="btn" OnClick="buttonMigration_Click" />
+                        <br />
+                        <br />
+                        <asp:Button ID="buttonShowAnimals" runat="server" Text="Show animals" class="btn" OnClick="buttonShowAnimals_Click" />
+                        <br />
+                        <br />
+                        <asp:Label ID="labelMigrationResult" runat="server" class="col-form-label col-form-label" ></asp:Label>
+                    </div>
+                </form>
+             </div>
+         </div>
+     </div>
 </body>
 </html>

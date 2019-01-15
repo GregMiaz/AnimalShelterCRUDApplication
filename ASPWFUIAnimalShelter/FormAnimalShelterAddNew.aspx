@@ -19,8 +19,13 @@
   </script>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-3">
     <form id="form1" runat="server">
         <div>
+            <br />
+            <br />
             <p>Animal Shelter Form</p>
             <table>
                 <tr>
@@ -52,5 +57,8 @@
             <asp:Button ID="buttonAdd" runat="server" OnClick="buttonAdd_Click" class="btn" Text="Add animal" />
         </div>
     </form>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
