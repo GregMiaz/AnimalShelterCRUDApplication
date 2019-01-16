@@ -14,5 +14,5 @@ To run the application:
 1. Create Animals Database at (localdb)\MSSQLLocalDB instance.
 2. Creating animals table is part of an application so you just have to click the Create Table button in UI
    and seed this table with the animals.txt file attached to the project in SOCAnimalShelterDataMigration\Data project folder
-   (on main app page there is a Browse File button and a textbox where file localization and name will appear) and then click Start Data Migration button.
+   (on main app Windows Forms page there is a Browse File button and a textbox where file localization and name will appear, with Web Forms UI please enter a path directly to textbox) and then click Start Data Migration button.
    If you have any questions please do not hesitate to contact me:).
